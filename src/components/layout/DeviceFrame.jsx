@@ -5,7 +5,7 @@ export default function DeviceFrame({children}) {
 
     return (
         <div className="device">
-            <div className="notch"></div>
+            <div className="notch"/>
             {children}
         </div>
     );

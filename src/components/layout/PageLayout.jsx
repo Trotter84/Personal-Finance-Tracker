@@ -10,12 +10,11 @@ export default function PageLayout({
 
     return (
         <DeviceFrame>
-            <StatusBar>
-                <main className="screenBody">
-                    {children}
-                </main>
-                {showNavigation && <BottomNav/>}
-            </StatusBar>
+            <StatusBar/>
+            <main className="screenBody">
+                {children}
+            </main>
+            {showNavigation && <BottomNav/>}
         </DeviceFrame>
     );
 }

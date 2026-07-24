@@ -2,7 +2,6 @@ import {useNavigate} from "react-router-dom";
 
 import PageLayout from "../components/layout/PageLayout";
 import StatusBar from "../components/layout/StatusBar";
-import BottomNav from "../components/navigation/BottomNav";
 
 import ProfileRow from "../components/cards/ProfileRow";
 import PrimaryButton from "../components/ui/PrimaryButton";
@@ -51,7 +50,6 @@ export default function Profile() {
                     </PrimaryButton>
                 </div>
             </div>
-            <BottomNav/>
         </PageLayout>
     );
 }

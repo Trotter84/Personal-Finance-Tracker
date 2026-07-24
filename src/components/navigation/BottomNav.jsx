@@ -32,11 +32,11 @@ export default function BottomNav() {
                 to="/profile"
                 className="profileButton"
             >
-                <img
-                    src="/images/profile.jpg"
-                    // src={user.photoURL || defaultAvatar}
-                    // alt={user.name}
-                />
+                {/*<img*/}
+                {/*    src="/images/profile.jpg"*/}
+                {/*    // src={user.photoURL || defaultAvatar}*/}
+                {/*    // alt={user.name}*/}
+                {/*/>*/}
             </NavLink>
 
             <NavLink

@@ -1,5 +1,6 @@
 .device {
     max-width: 375px;
+    min-width: 375px;
     width: 100%;
     height: 700px;
     background: #10161F;

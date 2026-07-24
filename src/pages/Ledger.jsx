@@ -3,7 +3,6 @@ import {useState} from "react";
 import PageLayout from "../components/layout/PageLayout";
 import PageHeader from "../components/layout/PageHeader.jsx";
 import StatusBar from "../components/layout/StatusBar";
-import BottomNav from "../components/navigation/BottomNav";
 
 import SearchBar from "../components/ui/SearchBar";
 import FilterChip from "../components/ui/FilterChip";
@@ -73,7 +72,6 @@ export default function Ledger() {
                     ))
                 }
             </div>
-            <BottomNav/>
         </PageLayout>
     );
 }

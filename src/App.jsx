@@ -1,5 +1,5 @@
 import {Navigate, Route, Routes} from 'react-router-dom'
-import './App.css'
+import './styles/App.css'
 
 import Login from './pages/Login.jsx'
 import Dashboard from './pages/Dashboard.jsx'
@@ -16,7 +16,7 @@ export default function App() {
                 <Route path='/' element={<Login/>}/>
                 <Route path='/dashboard' element={<Dashboard/>}/>
                 <Route path='/profile' element={<Profile/>}/>
-                <Route path='/transactions' element={<Ledger/>}/>
+                <Route path='/ledger' element={<Ledger/>}/>
                 <Route path='/goals' element={<Goals/>}/>
                 <Route path='/reports' element={<Reports/>}/>
                 <Route path='*' element={<Navigate to='/'/>}/>

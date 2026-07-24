@@ -1,6 +1,5 @@
 import PageLayout from "../components/layout/PageLayout";
 import StatusBar from "../components/layout/StatusBar";
-import BottomNav from "../components/navigation/BottomNav";
 
 import GoalCard from "../components/cards/GoalCard";
 
@@ -37,7 +36,6 @@ export default function Goals() {
                     + Add New Goal
                 </div>
             </div>
-            <BottomNav/>
         </PageLayout>
     );
 }
