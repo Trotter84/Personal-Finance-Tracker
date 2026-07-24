@@ -1,19 +1,21 @@
 import {useNavigate} from "react-router-dom";
 
 import PageLayout from "../components/layout/PageLayout";
-import PageHeader from "../components/layout/PageHeader";
 import StatusBar from "../components/layout/StatusBar";
 import BottomNav from "../components/navigation/BottomNav";
 
 import ProfileRow from "../components/cards/ProfileRow";
 import PrimaryButton from "../components/ui/PrimaryButton";
 
-import {profile, settings} from "../data/profile";
+import {settings} from "../data/profile";
+import {useApp} from "../context/AppContext"
 
 import "./Profile.css";
 
 
 export default function Profile() {
+
+    const {profile} = useApp();
 
     const navigate = useNavigate();
 

@@ -7,12 +7,14 @@ import DonutChart from "../components/charts/DonutChart";
 import LegendRow from "../components/charts/LegendRow";
 import TrendChart from "../components/charts/TrendChart";
 
-import {spendingByCategory} from "../data/reports";
+import {useApp} from "../context/AppContext"
 
 import "./Reports.css";
 
 
 export default function Reports() {
+
+    const {reports} = useApp();
 
     return (
         <PageLayout>
@@ -22,7 +24,7 @@ export default function Reports() {
                 <DonutChart/>
                 <div className="reportLegend">
                     {
-                        spendingByCategory.map(item => (
+                        reports.spendingByCategory.map(item => (
                             <LegendRow
                                 key={item.id}
                                 label={item.category}

@@ -6,13 +6,15 @@ import GoalCard from "../components/cards/GoalCard";
 
 import {Plus} from "lucide-react";
 
-import {goals} from "../data/goals";
+import {useApp} from "../context/AppContext"
 
 import "./Goals.css";
 import PageHeader from "../components/layout/PageHeader";
 
 
 export default function Goals() {
+
+    const {goals} = useApp();
 
     return (
         <PageLayout>

@@ -10,12 +10,14 @@ import FilterChip from "../components/ui/FilterChip";
 
 import TransactionRow from "../components/cards/TransactionRow";
 
-import {ledger} from "../data/ledger";
+import {useApp} from "../context/AppContext"
 
 import "./Ledger.css";
 
 
 export default function Ledger() {
+
+    const {ledger} = useApp();
 
     const [filter, setFilter] = useState("All");
 

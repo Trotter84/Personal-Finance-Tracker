@@ -6,13 +6,15 @@ import TransactionRow from "../components/cards/TransactionRow";
 
 import {ArrowDownLeft, ArrowUpRight} from "lucide-react";
 
-import {profile} from "../data/profile";
-import {recentTransactions} from "../data/transactions";
+import {useApp} from "../context/AppContext"
 
 import "./Dashboard.css";
 
 
 export default function Dashboard() {
+
+    const {profile, transactions} = useApp();
+
     return (
         <PageLayout>
             <div className="dashboardHeader">
@@ -45,7 +47,7 @@ export default function Dashboard() {
                     View All
                 </button>
             </div>
-            {recentTransactions.map(transaction => (
+            {transactions.map(transaction => (
                 <TransactionRow
                     key={transaction.id}
                     {...transaction}
