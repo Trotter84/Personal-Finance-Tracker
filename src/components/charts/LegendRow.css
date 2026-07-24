@@ -1,0 +1,20 @@
+.legendRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.legendLeft {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.legendColor {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: inline-block;
+}

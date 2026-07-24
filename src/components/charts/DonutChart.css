@@ -1,0 +1,41 @@
+.donutContainer {
+    display: flex;
+    justify-content: center;
+    margin: 24px 0;
+}
+
+.donut {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: conic-gradient(
+            #C9A16B 0 42%,
+            #8FAE87 42% 68%,
+            #6E86A3 68% 84%,
+            #BC6753 84% 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.donutCenter {
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    background: var(--paper);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.donutCenter span {
+    font-size: .75rem;
+    color: var(--muted);
+}
+
+.donutCenter strong {
+    font-size: 1.3rem;
+    margin-top: 4px;
+}
