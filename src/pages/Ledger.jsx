@@ -1,6 +1,7 @@
 import {useState} from "react";
 
-import DeviceFrame from "../components/layout/DeviceFrame";
+import PageLayout from "../components/layout/PageLayout";
+import PageHeader from "../components/layout/PageHeader.jsx";
 import StatusBar from "../components/layout/StatusBar";
 import BottomNav from "../components/navigation/BottomNav";
 
@@ -11,10 +12,10 @@ import TransactionRow from "../components/cards/TransactionRow";
 
 import {ledger} from "../data/ledger";
 
-import "./Transactions.css";
+import "./Ledger.css";
 
 
-export default function Transactions() {
+export default function Ledger() {
 
     const [filter, setFilter] = useState("All");
 
@@ -27,14 +28,10 @@ export default function Transactions() {
     ];
 
     return (
-        <DeviceFrame>
+        <PageLayout>
             <StatusBar/>
             <div className="screenBody">
-                <div className="pageHeader">
-                    <h2>
-                        Ledger
-                    </h2>
-                </div>
+                <PageHeader title="Ledger"/>
                 <SearchBar/>
                 <div className="chipRow">
                     {
@@ -75,6 +72,6 @@ export default function Transactions() {
                 }
             </div>
             <BottomNav/>
-        </DeviceFrame>
+        </PageLayout>
     );
 }

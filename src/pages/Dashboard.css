@@ -43,3 +43,13 @@
     color: var(--muted);
     font-weight: 600;
 }
+
+.headerActions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.headerActions svg {
+    color: var(--muted);
+}

@@ -1,0 +1,42 @@
+.profileCard {
+    background: var(--paper);
+    padding: 28px;
+    border-radius: 18px;
+    border: 1px solid var(--border);
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.profileAvatar {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    background: var(--paper2);
+    border: 3px solid var(--gold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 16px;
+    font-size: 36px;
+    font-family: Georgia, serif;
+    color: var(--gold);
+}
+
+.profileCard h2 {
+    margin-bottom: 8px;
+}
+
+.profileCard p {
+    color: var(--muted);
+    margin-bottom: 8px;
+}
+
+.profileCard span {
+    font-size: .75rem;
+    color: var(--gold);
+}
+
+.logout {
+    margin-top: 30px;
+}

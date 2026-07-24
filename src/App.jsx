@@ -1,16 +1,14 @@
-// import {useState} from 'react'
 import {Navigate, Route, Routes} from 'react-router-dom'
 import './App.css'
 
 import Login from './pages/Login.jsx'
 import Dashboard from './pages/Dashboard.jsx'
 import Profile from './pages/Profile.jsx'
-import Transactions from './pages/Transactions.jsx'
+import Ledger from './pages/Ledger.jsx'
 import Goals from './pages/Goals.jsx'
 import Reports from './pages/Reports.jsx'
 
-function App() {
-    // const location = useLocation()
+export default function App() {
 
     return (
         <>
@@ -18,7 +16,7 @@ function App() {
                 <Route path='/' element={<Login/>}/>
                 <Route path='/dashboard' element={<Dashboard/>}/>
                 <Route path='/profile' element={<Profile/>}/>
-                <Route path='/transactions' element={<Transactions/>}/>
+                <Route path='/transactions' element={<Ledger/>}/>
                 <Route path='/goals' element={<Goals/>}/>
                 <Route path='/reports' element={<Reports/>}/>
                 <Route path='*' element={<Navigate to='/'/>}/>
@@ -26,5 +24,3 @@ function App() {
         </>
     )
 }
-
-export default App

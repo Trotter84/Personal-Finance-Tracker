@@ -1,8 +1,7 @@
 import {useState} from "react";
 import {useNavigate} from "react-router-dom";
 
-import DeviceFrame from "../components/layout/DeviceFrame";
-import StatusBar from "../components/layout/StatusBar";
+import PageLayout from "../components/layout/PageLayout";
 
 import Logo from "../components/ui/Logo";
 import TextInput from "../components/ui/TextInput";
@@ -26,8 +25,7 @@ export default function Login() {
     }
 
     return (
-        <DeviceFrame>
-            <StatusBar/>
+        <PageLayout showNavigation={false}>
             <div className="loginPage">
 
                 <Logo/>
@@ -69,6 +67,6 @@ export default function Login() {
                     <span>Create account</span>
                 </div>
             </div>
-        </DeviceFrame>
+        </PageLayout>
     );
 }

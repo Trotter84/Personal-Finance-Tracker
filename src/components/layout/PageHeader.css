@@ -1,0 +1,11 @@
+.pageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.pageHeader h2 {
+    font-family: Georgia, serif;
+    font-size: 1.6rem;
+}

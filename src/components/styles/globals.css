@@ -1,0 +1,51 @@
+html,
+body,
+#root {
+    height: 100%;
+    --ink: #10161F;
+    --paper: #1A222E;
+    --paper2: #212B3A;
+    --gold: #C9A16B;
+    --gold-light: rgba(201, 161, 107, .16);
+    --sage: #8FAE87;
+    --red: #BC6753;
+    --slate: #6E86A3;
+    --text: #EDE6D6;
+    --muted: #938F80;
+    --border: rgba(255, 255, 255, .08);
+    font-family: Inter, system-ui, sans-serif;
+}
+
+body {
+    overflow: hidden;
+    background: #08090C;
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.screenBody {
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.screenBody::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

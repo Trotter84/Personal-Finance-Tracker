@@ -1,4 +1,4 @@
-import DeviceFrame from "../components/layout/DeviceFrame";
+import PageLayout from "../components/layout/PageLayout";
 import StatusBar from "../components/layout/StatusBar";
 import BottomNav from "../components/navigation/BottomNav";
 
@@ -9,22 +9,20 @@ import {Plus} from "lucide-react";
 import {goals} from "../data/goals";
 
 import "./Goals.css";
+import PageHeader from "../components/layout/PageHeader";
 
 
 export default function Goals() {
 
     return (
-        <DeviceFrame>
+        <PageLayout>
             <StatusBar/>
             <div className="screenBody">
-                <div className="pageHeader">
-                    <h2>
-                        Goals
-                    </h2>
+                <PageHeader title="Goals">
                     <button className="roundButton">
                         <Plus size={18}/>
                     </button>
-                </div>
+                </PageHeader>
                 {
                     goals.map(goal => (
                         <GoalCard
@@ -38,6 +36,6 @@ export default function Goals() {
                 </div>
             </div>
             <BottomNav/>
-        </DeviceFrame>
+        </PageLayout>
     );
 }

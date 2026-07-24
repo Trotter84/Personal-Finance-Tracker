@@ -1,43 +1,60 @@
-import {House, Target, Receipt, PieChart, Plus} from "lucide-react";
+import {
+    House,
+    Target,
+    Receipt,
+    PieChart
+} from "lucide-react";
+
 import {NavLink} from "react-router-dom";
 import "./BottomNav.css";
 
-
 export default function BottomNav() {
-
     return (
-        <div className="bottomNav">
+        <nav className="bottomNav">
+
             <NavLink
                 to="/dashboard"
                 className={({isActive}) => isActive ? "active" : ""}
             >
-                <House/>
-                Home
+                <House size={20}/>
+                <span>Home</span>
             </NavLink>
+
             <NavLink
                 to="/goals"
                 className={({isActive}) => isActive ? "active" : ""}
             >
-                <Target/>
-                Goals
+                <Target size={20}/>
+                <span>Goals</span>
             </NavLink>
-            <button className="fab">
-                <Plus/>
-            </button>
+
             <NavLink
-                to="/transactions"
+                to="/profile"
+                className="profileButton"
+            >
+                <img
+                    src="/images/profile.jpg"
+                    // src={user.photoURL || defaultAvatar}
+                    // alt={user.name}
+                />
+            </NavLink>
+
+            <NavLink
+                to="/ledger"
                 className={({isActive}) => isActive ? "active" : ""}
             >
-                <Receipt/>
-                Ledger
+                <Receipt size={20}/>
+                <span>Ledger</span>
             </NavLink>
+
             <NavLink
                 to="/reports"
                 className={({isActive}) => isActive ? "active" : ""}
             >
-                <PieChart/>
-                Reports
+                <PieChart size={20}/>
+                <span>Reports</span>
             </NavLink>
-        </div>
+
+        </nav>
     );
 }

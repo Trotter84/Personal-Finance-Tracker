@@ -1,4 +1,5 @@
-import DeviceFrame from "../components/layout/DeviceFrame";
+import PageLayout from "../components/layout/PageLayout";
+import PageHeader from "../components/layout/PageHeader";
 import StatusBar from "../components/layout/StatusBar";
 import BottomNav from "../components/navigation/BottomNav";
 
@@ -14,12 +15,10 @@ import "./Reports.css";
 export default function Reports() {
 
     return (
-        <DeviceFrame>
+        <PageLayout>
             <StatusBar/>
             <div className="screenBody">
-                <div className="pageHeader">
-                    <h2>Reports</h2>
-                </div>
+                <PageHeader title="Reports"/>
                 <DonutChart/>
                 <div className="reportLegend">
                     {
@@ -39,6 +38,6 @@ export default function Reports() {
                 <TrendChart/>
             </div>
             <BottomNav/>
-        </DeviceFrame>
+        </PageLayout>
     );
 }
