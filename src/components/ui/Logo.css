@@ -1,0 +1,31 @@
+.logoWrapper {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logoCircle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: var(--paper);
+    border: 2px solid var(--gold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-family: Georgia, serif;
+    color: var(--gold);
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.logoWrapper h1 {
+    font-family: Georgia, serif;
+    color: var(--text);
+    margin-bottom: 6px;
+}
+
+.logoWrapper p {
+    color: var(--muted);
+    font-size: .85rem;
+}

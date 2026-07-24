@@ -1,0 +1,67 @@
+.goalCard {
+    background: var(--paper);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 18px;
+    margin-bottom: 16px;
+}
+
+.goalTop {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.goalIcon {
+    width: 48px;
+    height: 48px;
+    background: var(--paper2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin-right: 14px;
+}
+
+.goalInfo {
+    flex: 1;
+}
+
+.goalNumber {
+    font-size: .75rem;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 4px;
+}
+
+.goalInfo h3 {
+    font-size: 1rem;
+}
+
+.goalPercent {
+    font-weight: bold;
+    font-family: monospace;
+    color: var(--gold);
+}
+
+.progressTrack {
+    height: 8px;
+    background: var(--paper2);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progressFill {
+    height: 100%;
+    background: var(--gold);
+}
+
+.goalFooter {
+    display: flex;
+    justify-content: space-between;
+    font-size: .8rem;
+    color: var(--muted);
+    font-family: monospace;
+}

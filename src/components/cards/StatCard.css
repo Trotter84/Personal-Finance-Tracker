@@ -1,0 +1,20 @@
+.statCard {
+    flex: 1;
+    background: var(--paper);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.statTitle {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    font-size: .8rem;
+    margin-bottom: 10px;
+}
+
+.statCard h3 {
+    font-family: monospace;
+    font-size: 1.2rem;
+}

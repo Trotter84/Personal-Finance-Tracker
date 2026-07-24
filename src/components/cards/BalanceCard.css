@@ -1,0 +1,31 @@
+.balanceCard {
+    background: var(--paper);
+    padding: 24px;
+    border-radius: 18px;
+    border: 1px solid var(--border);
+    margin-bottom: 20px;
+}
+
+.balanceLabel {
+    font-size: .8rem;
+    color: var(--muted);
+    margin-bottom: 8px;
+}
+
+.balanceAmount {
+    font-size: 2rem;
+    margin-bottom: 14px;
+    font-family: monospace;
+}
+
+.balanceTrend {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: var(--gold-light);
+    color: var(--gold);
+    font-size: .75rem;
+    font-weight: 600;
+}

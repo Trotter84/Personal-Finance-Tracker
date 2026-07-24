@@ -1,0 +1,19 @@
+.chipRow {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    margin-bottom: 22px;
+    padding-bottom: 6px;
+}
+
+.chipRow::-webkit-scrollbar {
+    display: none;
+}
+
+.dateHeading {
+    margin: 20px 0 10px;
+    font-size: .75rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--muted);
+}

@@ -1,0 +1,42 @@
+.pageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.pageHeader h2 {
+    font-family: Georgia, serif;
+    font-size: 1.6rem;
+}
+
+.roundButton {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: var(--paper);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+}
+
+.addGoalCard {
+    margin-top: 10px;
+    padding: 22px;
+    border: 2px dashed var(--border);
+    border-radius: 18px;
+    text-align: center;
+    color: var(--muted);
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.addGoalCard:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+}

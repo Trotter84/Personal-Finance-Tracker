@@ -1,0 +1,45 @@
+.transactionRow {
+    display: flex;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.transactionIcon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: var(--paper2);
+    margin-right: 14px;
+    font-size: 1.2rem;
+}
+
+.transactionInfo {
+    flex: 1;
+}
+
+.transactionInfo h4 {
+    font-size: .95rem;
+    margin-bottom: 4px;
+}
+
+.transactionInfo p {
+    font-size: .75rem;
+    color: var(--muted);
+}
+
+.transactionAmount {
+    font-weight: 700;
+    font-family: monospace;
+}
+
+.income {
+    color: var(--sage);
+}
+
+.expense {
+    color: #F2E9DD;
+}

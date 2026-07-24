@@ -1,30 +1,28 @@
 // import {useState} from 'react'
-import {Route, Routes} from 'react-router-dom'
+import {Navigate, Route, Routes} from 'react-router-dom'
 import './App.css'
 
-import Login from './components/Login.jsx'
-import Dashboard from './components/Dashboard.jsx'
-import Profile from './components/Profile.jsx'
-import Transactions from './components/Transactions.jsx'
-import Goals from './components/Goals.jsx'
-import Reports from './components/Reports.jsx'
+import Login from './pages/Login.jsx'
+import Dashboard from './pages/Dashboard.jsx'
+import Profile from './pages/Profile.jsx'
+import Transactions from './pages/Transactions.jsx'
+import Goals from './pages/Goals.jsx'
+import Reports from './pages/Reports.jsx'
 
 function App() {
     // const location = useLocation()
 
     return (
         <>
-            {/*<TopBar />*/}
-            <div>
-                <Routes>
-                    <Route exact path='/' element={<Dashboard/>}/>
-                    <Route path='/login' element={<Login/>}/>
-                    <Route path='/profile' element={<Profile/>}/>
-                    <Route path='/transactions' element={<Transactions/>}/>
-                    <Route path='/goals' element={<Goals/>}/>
-                    <Route path='/reports' element={<Reports/>}/>
-                </Routes>
-            </div>
+            <Routes>
+                <Route path='/' element={<Login/>}/>
+                <Route path='/dashboard' element={<Dashboard/>}/>
+                <Route path='/profile' element={<Profile/>}/>
+                <Route path='/transactions' element={<Transactions/>}/>
+                <Route path='/goals' element={<Goals/>}/>
+                <Route path='/reports' element={<Reports/>}/>
+                <Route path='*' element={<Navigate to='/'/>}/>
+            </Routes>
         </>
     )
 }
