@@ -30,7 +30,6 @@ export default function Ledger() {
 
     return (
         <PageLayout>
-            <StatusBar/>
             <div className="screenBody">
                 <PageHeader title="Ledger"/>
                 <SearchBar/>

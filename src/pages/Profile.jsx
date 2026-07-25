@@ -5,6 +5,7 @@ import StatusBar from "../components/layout/StatusBar";
 
 import ProfileRow from "../components/cards/ProfileRow";
 import PrimaryButton from "../components/ui/PrimaryButton";
+import Avatar from "../components/ui/Avatar";
 
 import {settings} from "../data/profile";
 import {useApp} from "../context/AppContext"
@@ -24,12 +25,13 @@ export default function Profile() {
 
     return (
         <PageLayout>
-            <StatusBar/>
             <div className="screenBody">
                 <div className="profileCard">
-                    <div className="profileAvatar">
-                        {profile.avatar}
-                    </div>
+                    <Avatar
+                        src={profile.avatar}
+                        initials={profile.initials}
+                        size="large"
+                    />
                     <h2>{profile.name}</h2>
                     <p>{profile.email}</p>
                     <span>

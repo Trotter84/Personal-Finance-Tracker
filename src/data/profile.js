@@ -1,8 +1,9 @@
 export const profile = {
     name: "Arthur Morgan",
-    email: "arthur@example.com",
+    email: "a.morgan@yeehaw.com",
     memberSince: "January 1912",
-    avatar: "A"
+    avatar: "../../public/images/arthur-morgan-profile.jpg",
+    initials: "AM"
 };
 
 export const settings = [

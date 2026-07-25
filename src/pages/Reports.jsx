@@ -17,7 +17,6 @@ export default function Reports() {
 
     return (
         <PageLayout>
-            <StatusBar/>
             <div className="screenBody">
                 <PageHeader title="Reports"/>
                 <DonutChart/>

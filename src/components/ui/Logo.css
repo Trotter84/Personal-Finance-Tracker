@@ -1,31 +1,27 @@
-.logoWrapper {
-    text-align: center;
-    margin-bottom: 40px;
-}
+/* Import Cinzel serif font to match the premium brand identity */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&display=swap');
 
-.logoCircle {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background: var(--paper);
-    border: 2px solid var(--gold);
+.north-logo-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    font-size: 32px;
-    font-family: Georgia, serif;
-    color: var(--gold);
-    margin: auto;
-    margin-bottom: 20px;
+    justify-content: center;
+    background-color: transparent;
+    padding: 1rem;
 }
 
-.logoWrapper h1 {
-    font-family: Georgia, serif;
-    color: var(--text);
-    margin-bottom: 6px;
+.north-logo-svg {
+    overflow: visible;
+    filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.4));
 }
 
-.logoWrapper p {
-    color: var(--muted);
-    font-size: .85rem;
+/* Luxury Serif Typography */
+.north-brand-text {
+    font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0.38em;
+    fill: url(#textGold);
+    /* Slight offset to account for letter-spacing alignment */
+    dx: 0.19em;
 }

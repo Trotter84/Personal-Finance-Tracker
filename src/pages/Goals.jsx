@@ -17,7 +17,6 @@ export default function Goals() {
 
     return (
         <PageLayout>
-            <StatusBar/>
             <div className="screenBody">
                 <PageHeader title="Goals">
                     <button className="roundButton">
