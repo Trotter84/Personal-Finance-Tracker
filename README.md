@@ -5,7 +5,7 @@
 - I used Claude AI the most, along side ChatGPT and Gemini when tokens ran out.
 
 #### Current URL
-- [poetic-kataifi-b15536.netlify.app](poetic-kataifi-b15536.netlify.app)
+- [poetic-kataifi-b15536.netlify.app](https://poetic-kataifi-b15536.netlify.app)
 
 
 # React + Vite
