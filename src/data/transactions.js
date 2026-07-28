@@ -15,16 +15,23 @@ export const recentTransactions = [
     },
     {
         id: 3,
+        icon: "🎬",
+        title: "YouTube Premium Family",
+        subtitle: "Subscription • Yesterday",
+        amount: -24.99
+    },
+    {
+        id: 4,
         icon: "☕",
         title: "Blue Bottle Coffee",
         subtitle: "Food • Yesterday",
         amount: -6.5
     },
     {
-        id: 4,
+        id: 5,
         icon: "🎬",
         title: "Netflix",
         subtitle: "Subscription • Jul 18",
-        amount: -15.99
-    }
+        amount: -19.99
+    },
 ];
