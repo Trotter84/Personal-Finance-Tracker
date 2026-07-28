@@ -1,6 +1,5 @@
 import PageLayout from "../components/layout/PageLayout";
 import PageHeader from "../components/layout/PageHeader";
-import StatusBar from "../components/layout/StatusBar";
 
 import DonutChart from "../components/charts/DonutChart";
 import LegendRow from "../components/charts/LegendRow";

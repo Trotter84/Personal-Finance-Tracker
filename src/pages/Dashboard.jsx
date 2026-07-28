@@ -1,3 +1,5 @@
+import {NavLink} from "react-router-dom";
+
 import PageLayout from "../components/layout/PageLayout";
 
 import BalanceCard from "../components/cards/BalanceCard";
@@ -43,9 +45,9 @@ export default function Dashboard() {
             <div className="recentHeader">
                 <h3>Recent Entries</h3>
 
-                <button>
+                <NavLink to="/ledger">
                     View All
-                </button>
+                </NavLink>
             </div>
             {transactions.map(transaction => (
                 <TransactionRow
