@@ -1,8 +1,10 @@
 # Personal-Finance-Tracker
 
-Team assignment for Introduction to Project Management.
-Utilizing AI for development was part of the assignment guidelines.
-I used Claude AI the most, along side ChatGPT and Gemini when tokens ran out.
+#### Team assignment for Introduction to Project Management.
+- Utilizing AI for development was part of the assignment guidelines.
+- I used Claude AI the most, along side ChatGPT and Gemini when tokens ran out.
+
+
 
 
 # React + Vite
