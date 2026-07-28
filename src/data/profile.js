@@ -2,7 +2,8 @@ export const profile = {
     name: "Arthur Morgan",
     email: "a.morgan@yeehaw.com",
     memberSince: "January 1912",
-    avatar: "../../public/images/arthur-morgan-profile.jpg",
+    // avatar: "../../public/images/arthur-morgan-profile.jpg",
+    avatar: "/images/arthur-morgan-profile.jpg",
     initials: "AM"
 };
 
